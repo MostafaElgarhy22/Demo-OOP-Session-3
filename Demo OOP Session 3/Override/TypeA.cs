@@ -47,5 +47,23 @@ namespace Demo_OOP_Session_3.Override
         }
 
     }
-       
+
+    public class TypeC : TypeB
+    {
+        public int C { get; set; }
+        public TypeC(int a, int b, int c) : base(a, b)
+        {
+            C = c;
+        }
+        public override void Myfun02()
+        {
+            Console.WriteLine($" C = {C}");
+        }
+        public void Myfun01()
+        {
+            Console.WriteLine("I am GrandChild");
+        }
+        
+    }
+
 }
