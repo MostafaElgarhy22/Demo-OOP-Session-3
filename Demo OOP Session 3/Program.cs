@@ -1,4 +1,6 @@
-﻿namespace Demo_OOP_Session_3
+﻿using Demo_OOP_Session_3.Override;
+
+namespace Demo_OOP_Session_3
 {
     internal class Program
     {
@@ -21,7 +23,7 @@
         static void Main(string[] args)
         {
 
-            // poly Morphism
+            // PolyMorphism
             #region Overloading
             // 1. Overloading - 2. Overriding
             // double result = Sum(1.5,2);
@@ -31,6 +33,18 @@
             //Console.WriteLineint();
             //Console.WriteLinestring();
             //Console.WriteLinechar();
+            #endregion
+            #region Overriding
+            //TypeA a = new TypeA(5);
+            //TypeA.A = 100;
+            //a.Myfun01();
+            //a.Myfun02();
+
+            //TypeB b = new TypeB(10, 20);
+            //TypeB.A = 1;
+            //TypeB.B = 2;
+            //b.Myfun01();
+            //b.Myfun02();
             #endregion
         }
     }
