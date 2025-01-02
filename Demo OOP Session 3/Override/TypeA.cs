@@ -31,10 +31,16 @@ namespace Demo_OOP_Session_3.Override
         {
             B = b;
         }
+        // static Binding[Early Binding]
+        // Happen at compilation time
+        // Compiler will bind the function call to based on the reference type not object.
         public new void Myfun01()
         {
             Console.WriteLine("I am Child");
         }
+        // Dynamic Binding[Late Binding]
+        // Happen at runtime
+        // Clr will bind the function call to based on the object type not reference.
         public override void Myfun02()
         {
             Console.WriteLine($" B = {B}");
